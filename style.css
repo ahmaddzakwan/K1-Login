@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-image: url(img/bg.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 9%;
+}
+
+.wrapper .form-login {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px black;
+  border-radius: 5%;
+}
+
+.wrapper .form-login .form-title h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+}
+
+.wrapper .form-login form {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.wrapper .form-login form .user input,
+.wrapper .form-login form .lock input {
+  font-size: 1.2rem;
+  padding: 5px;
+  font-family: "poppins", sans-serif;
+  border-radius: 25px;
+  width: 100%;
+  padding-left: 13px;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+  background-color: mintcream;
+  box-shadow: 0 0 5px;
+  color: black;
+}
+
+.wrapper .form-login form .lock input {
+  margin-bottom: 0;
+}
+
+.wrapper .form-login .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .form-login .content a {
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+  margin-top: 0.7rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+.wrapper .form-login .content a:hover {
+  color: blanchedalmond;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.wrapper .form-login .content button {
+  width: 80%;
+  padding: 5px;
+  margin-left: 8%;
+  margin-top: 0.7rem;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.wrapper .form-login .content button:hover {
+  color: white;
+  background-color: antiquewhite;
+  text-shadow: 0 0 5px black;
+  transition: 0.2s linear;
+}
+
+.wrapper .form-login .content p {
+  margin-top: 0.6rem;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  color: burlywood;
+}
+
+.wrapper .form-login .content p a {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin-top: 50%;
+  }
+
+  body {
+    background-image: url(img/bg.jpg);
+  }
+}
